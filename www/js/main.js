@@ -7,7 +7,7 @@ const parseData = data => data?.split(",").map(x => x.trim());
 const parseLine = line => line?.split(":").map((x, i) => i ? parseData(x) : (Number(x) || 0));
 const parseLines = value => value?.split("\n").filter(x => x).map(x => x.trim()).map(parseLine) || "";
 const numericAscending = (a, b) => a > b ? 1 : a < b ? -1 : 0;
-const plotWidth = 800 - 20 - 100;
+const plotWidth = 1000 - 20 - 100;
 const plotOffsetX = 10;
 const textLineHeight = 20;
 
