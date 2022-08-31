@@ -5,13 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Timeline</title>
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/main.js" type="module"></script>
 </head>
 
 <body>
+
+    <textarea></textarea>
+    <svg viewBox="-10 -210 820 420" viewbox="" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+        <defs>
+            <linearGradient id="main_axis" x1="0" x2="800" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+                <stop stop-color="silver" offset="0" />
+                <stop stop-color="white" offset="1" />
+            </linearGradient>
+        </defs>
+        <g id="axis">
+            <line x1="0" x2="800" y1="0" y2="0" stroke="url(#main_axis)" stroke-width="5" />
+        </g>
+
+    </svg>
+
 </body>
 
 </html>
